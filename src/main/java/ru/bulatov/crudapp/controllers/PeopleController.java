@@ -10,11 +10,12 @@ import ru.bulatov.crudapp.models.Person;
 
 import javax.validation.Valid;
 
+
 @Controller
 @RequestMapping("/people")
 public class PeopleController {
 
-    private PersonDAO personDAO;
+    private final PersonDAO personDAO;
 
     @Autowired
     public PeopleController(PersonDAO personDAO) {
